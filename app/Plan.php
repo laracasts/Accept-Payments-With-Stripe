@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Plan extends Model
 {
-	/**
-	 * Database columns that require casting.
-	 * 
-	 * @var array
-	 */
+    /**
+     * Database columns that require casting.
+     * 
+     * @var array
+     */
     protected $casts = [
         'price' => 'integer'
     ];

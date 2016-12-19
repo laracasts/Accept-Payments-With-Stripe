@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
 {
-	/**
-	 * Fields to guard.
-	 * 
-	 * @var array
-	 */
+    /**
+     * Fields to guard.
+     * 
+     * @var array
+     */
     protected $guarded = [];
 
     /**
@@ -20,6 +20,6 @@ class Payment extends Model
      */
     public function inDollars()
     {
-    	return number_format($this->amount / 100, 2);
+        return number_format($this->amount / 100, 2);
     }
 }
